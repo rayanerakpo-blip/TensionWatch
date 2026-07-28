@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background-color: #048b9a;
+    color: #048b9a;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 24px;
+}
+
+.logo{
+    font-size: 28px;
+    color: #888888;
+    font-weight: 700;
+}
+
+.sous-titre{
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background-color: #f5f5f5;
+    border: 2px solid #048b9a;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    color: #048b9a;
+}
+
+.form-control:focus {
+    border-color: #048b9a;
+    box-shadow: 0 0 3px rgba(4, 139, 154, 0.2);
+    background-color: #ffffff;
+    color: #048b9a;
+}
+
+.form-control::placeholder {
+    color: #888888;
+    font-size: 14px;
+}
+
+.btn-success {
+    background-color: #34c759;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #2aad4a;
+    border: none;
+}
+
+.login-card a {
+    color: #048b9a;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+.alert-danger{
+    font-size: 13px;
+    border-radius: 12px;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* --- Styles pour le tableau de bord (Accueil.php) --- */
+
+body {
+    /* On garde le fond teal pour la cohérence avec le login,
+       mais on ajoute un fond clair pour les pages internes */
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.navbar-tw {
+    background-color: #048b9a;
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-tw {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.valeur-tension {
+    font-size: 32px;
+    font-weight: 700;
+    color: #048b9a;
+}
+
+.unite-tension {
+    font-size: 14px;
+    color: #888888;
+    margin-left: 6px;
+}
+
+.btn-menu {
+    background-color: #ffffff;
+    border: 2px solid #048b9a;
+    border-radius: 16px;
+    color: #048b9a;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #048b9a;
+    color: #ffffff;
+}
+
+.btn-menu-urgence {
+    background-color: #34c759;
+    border-radius: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu-urgence:hover {
+    background-color: #2aad4a;
+    color: #ffffff;
+}
+
+/* --- Styles pour les formulaires internes (tension.php, medicaments.php, etc.) --- */
+
+.form-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #048b9a;
+    margin-bottom: 4px;
+}
+
+.alert-success {
+    font-size: 13px;
+    border-radius: 12px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+/* --- Styles pour les badges d'intensité (effets.php) --- */
+
+.badge-intensite {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.badge-intensite-basse {
+    background-color: #34c759;
+}
+
+.badge-intensite-moyenne {
+    background-color: #f0ad4e;
+}
+
+.badge-intensite-haute {
+    background-color: #dc3545;
+}
+
+/* --- Styles pour la page conseils.php --- */
+
+.titre-conseil {
+    color: #048b9a;
+}
+
+.liste-conseil {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.liste-conseil li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.card-alerte {
+    border: 2px solid #dc3545;
+}
+
+/* --- Styles pour la page urgences.php --- */
+
+.contact-urgence {
+    background-color: #f5f5f5;
+    border: 2px solid #048b9a;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-urgence:hover {
+    background-color: #048b9a;
+}
+
+.contact-urgence:hover .numero-urgence,
+.contact-urgence:hover .label-urgence {
+    color: #ffffff;
+}
+
+.numero-urgence {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #048b9a;
+}
+
+.label-urgence {
+    display: block;
+    font-size: 13px;
+    color: #888888;
+}
+
+
+/* --- Style pour le textarea (patient.php) --- */
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* --- Styles pour les contacts personnalisés (urgences.php) --- */
+
+.contact-perso {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.lien-telephone {
+    color: #048b9a;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lien-telephone:hover {
+    text-decoration: underline;
+}
+
+/* --- Styles pour les alertes et badges de tension (Accueil.php, tension.php) --- */
+
+.alerte-tension {
+    border-radius: 16px;
+    font-weight: 700;
+}
+
+.alerte-tension-elevee {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alerte-tension-haute {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alerte-tension-urgence {
+    background-color: #dc3545;
+    color: #ffffff;
+    animation: clignoter 1.5s infinite;
+}
+
+@keyframes clignoter {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.badge-tension {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.badge-tension-normale {
+    background-color: #34c759;
+    color: #ffffff;
+}
+
+.badge-tension-elevee {
+    background-color: #ffc107;
+    color: #333333;
+}
+
+.badge-tension-haute {
+    background-color: #fd7e14;
+    color: #ffffff;
+}
+
+.badge-tension-urgence {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* --- Styles pour les rappels (rappels.php) --- */
+
+.rappel-item {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    border-left: 4px solid #048b9a;
+}
+
+.rappel-passe {
+    border-left-color: #cccccc;
+    opacity: 0.7;
+}
