@@ -1,6 +1,11 @@
 <?php
 
 
+// Lignes temporaires pour le débogage - À RETIRER une fois le problème résolu
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Démarrage de la session et vérification que l'utilisateur est connecté
 session_start();
 require_once '../config/database.php';

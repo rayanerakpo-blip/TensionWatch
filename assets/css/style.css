@@ -338,3 +338,16 @@ textarea.form-control {
     border-left-color: #cccccc;
     opacity: 0.7;
 }
+
+/* --- Style pour le message de bienvenue (Accueil.php) --- */
+
+.bienvenue-tw h2 {
+    color: #048b9a;
+}
+
+.bienvenue-tw p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555555;
+}

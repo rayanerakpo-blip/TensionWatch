@@ -68,10 +68,17 @@ if ($patient) {
     <div class="container py-4">
 
         <?php if (!$patient): ?>
-            <!-- Aucun patient enregistré pour cet utilisateur -->
-            <div class="alert alert-warning text-center">
-                Aucun patient n'est encore associé à votre compte.
-                <a href="patient.php" class="alert-link">Cliquez ici pour ajouter un patient</a>.
+            <!-- Message de bienvenue affiché tant qu'aucun patient n'est associé au compte -->
+            <div class="card-tw p-4 mb-4 text-center bienvenue-tw">
+                <h2 class="mb-3">Bienvenue sur TensionWatch !</h2>
+                <p class="mb-3">
+                    TensionWatch est une interface pensée pour vous accompagner dans le suivi quotidien
+                    d'un proche atteint de troubles cardiovasculaires. Vous pouvez y suivre l'évolution
+                    de sa tension artérielle, gérer ses traitements, signaler d'éventuels effets indésirables,
+                    retrouver des conseils d'accompagnement, et garder à portée de main ses contacts d'urgence.
+                </p>
+                <p class="mb-4 fw-bold">Pour commencer, veuillez ajouter un patient.</p>
+                <a href="patient.php" class="btn btn-success">Ajouter un patient</a>
             </div>
         <?php else: ?>
 

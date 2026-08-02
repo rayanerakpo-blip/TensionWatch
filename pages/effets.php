@@ -116,7 +116,7 @@ $effets = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                     <div class="col-md-2">
                         <label class="form-label">Date</label>
-                        <input type="date" class="form-control" name="date_effet" required>
+                        <input type="date" class="form-control" name="date_effet" max="<?php echo $date_max; ?>" required>
                     </div>
                     <div class="col-md-2">
                         <label class="form-label">Description</label>
