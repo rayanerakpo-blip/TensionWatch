@@ -1,8 +1,8 @@
 <?php
 // Identifiants de connexion à la base de données hébergée sur InfinityFree
-$host = '....';
-$base = '...';
-$user = '...';
+$host = 'sq1113.infinityfree.com';
+$base = 'if0_42464685_tensionwatch';
+$user = 'if0_42464685';
 $pass = 'TON_MOT_DE_PASSE_ICI'; // remplace par ton vrai mot de passe MySQL
 
 try {
