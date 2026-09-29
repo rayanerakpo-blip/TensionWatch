@@ -1,0 +1,11 @@
+# Identifiants de base de données : ne jamais versionner
+config/database.php
+
+# Fichiers générés par les outils de test et les éditeurs
+.phpunit.result.cache
+vendor/
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
