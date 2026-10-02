@@ -17,7 +17,7 @@ $stmt->execute([$utilisateur_id]);
 $patient = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$patient) {
-    header('Location: Accueil.php');
+    header('Location: ../pages/accueil.php');
     exit();
 }
 
@@ -181,7 +181,7 @@ $effets = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <!-- Barre d'actions (masquée à l'impression) -->
     <div class="barre-actions">
-        <a href="Accueil.php" class="btn-retour">← Retour au tableau de bord</a>
+        <a href="accueil.php" class="btn-retour">← Retour au tableau de bord</a>
         <button class="btn-imprimer" onclick="window.print()">🖨️ Imprimer / Enregistrer en PDF</button>
     </div>
 

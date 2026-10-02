@@ -24,7 +24,7 @@ if (!isset($_SESSION['utilisateur_id'])) {
     <!-- Barre de navigation principale -->
     <nav class="navbar navbar-expand-lg navbar-tw">
         <div class="container-fluid">
-            <a href="Accueil.php" class="navbar-brand text-white text-decoration-none">← TensionWatch</a>
+            <a href="accueil.php" class="navbar-brand text-white text-decoration-none">← TensionWatch</a>
             <a href="../auth/logout.php" class="btn btn-sm btn-light">Déconnexion</a>
         </div>
     </nav>

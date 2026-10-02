@@ -105,7 +105,7 @@ tensionwatch/
 │   ├── database.example.php # Modèle de configuration à copier
 │   └── fonctions.php        # Fonctions communes (évaluation de la tension, etc.)
 ├── pages/
-│   ├── Accueil.php          # Tableau de bord
+│   ├── accueil.php          # Tableau de bord
 │   ├── patient.php          # Création / modification du profil patient
 │   ├── tension.php          # Suivi de la tension artérielle
 │   ├── medicaments.php      # Gestion des traitements

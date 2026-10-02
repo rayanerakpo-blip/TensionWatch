@@ -1,11 +1,5 @@
 <?php
 
-
-// Lignes temporaires pour le débogage - À RETIRER une fois le problème résolu
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 // Démarrage de la session et vérification que l'utilisateur est connecté
 session_start();
 require_once '../config/database.php';
@@ -100,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['modifier_mdp'])) {
     <!-- Barre de navigation principale -->
     <nav class="navbar navbar-expand-lg navbar-tw">
         <div class="container-fluid">
-            <a href="Accueil.php" class="navbar-brand text-white text-decoration-none">← TensionWatch</a>
+            <a href="accueil.php" class="navbar-brand text-white text-decoration-none">← TensionWatch</a>
             <a href="../auth/logout.php" class="btn btn-sm btn-light">Déconnexion</a>
         </div>
     </nav>

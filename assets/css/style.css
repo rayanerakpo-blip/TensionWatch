@@ -84,7 +84,7 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-/* --- Styles pour le tableau de bord (Accueil.php) --- */
+/* --- Styles pour le tableau de bord (accueil.php) --- */
 
 body {
     /* On garde le fond teal pour la cohérence avec le login,
@@ -270,7 +270,7 @@ textarea.form-control {
     text-decoration: underline;
 }
 
-/* --- Styles pour les alertes et badges de tension (Accueil.php, tension.php) --- */
+/* --- Styles pour les alertes et badges de tension (accueil.php, tension.php) --- */
 
 .alerte-tension {
     border-radius: 16px;
@@ -339,7 +339,7 @@ textarea.form-control {
     opacity: 0.7;
 }
 
-/* --- Style pour le message de bienvenue (Accueil.php) --- */
+/* --- Style pour le message de bienvenue (accueil.php) --- */
 
 .bienvenue-tw h2 {
     color: #048b9a;

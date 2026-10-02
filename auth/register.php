@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['utilisateur_prenom'] = $prenom;
 
             // Redirection vers le tableau de bord
-            header('Location: ../pages/Accueil.php');
+            header('Location: ../pages/accueil.php');
             exit();
         }
     }
