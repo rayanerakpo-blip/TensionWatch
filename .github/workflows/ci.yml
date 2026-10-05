@@ -1,0 +1,29 @@
+# Intégration continue : s'exécute à chaque push sur main et à chaque pull request
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  syntaxe-php:
+    name: Syntaxe PHP
+    runs-on: ubuntu-latest        # serveur Linux fourni par GitHub, vierge à chaque exécution
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'      # la version de PHP de ton environnement local
+
+      - name: Vérifier la syntaxe de tous les fichiers PHP
+        shell: bash
+        run: |
+          erreurs=0
+          while IFS= read -r fichier; do
+            php -l "$fichier" || erreurs=1
+          done < <(find . -name '*.php' -not -path './vendor/*')
+          exit $erreurs
